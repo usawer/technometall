@@ -56,7 +56,7 @@ const Contact = () => {
 
         try {
             // EmailJS configuration - you'll need to set up your own service
-            const serviceId = 'service_12345'; // Replace with your EmailJS service ID
+            const serviceId = 'service_fqp6ei4'; // Replace with your EmailJS service ID
             const templateId = 'template_b2avu9s'; // Replace with your EmailJS template ID
             const publicKey = 'ub6_8zfm1jligxMoR'; // Replace with your EmailJS public key
 
@@ -65,7 +65,7 @@ const Contact = () => {
                 from_email: formData.email,
                 subject: formData.subject,
                 message: formData.body,
-                to_email: 'info@technometall.hu' // Your email address
+                email: 'lph844541@gmail.com' // Recipient email for EmailJS template
             };
 
             await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -78,7 +78,7 @@ const Contact = () => {
         } catch (error) {
             console.error("Email sending error:", error);
             setStatus('error');
-            setMessage('Hiba történt az e-mail küldése során. Kérjük, próbálja újra később.');
+            setMessage(`Hiba történt az e-mail küldése során: ${error.text || error.message || 'Ismeretlen hiba'}. Kérjük, próbálja újra később.`);
         }
     };
 
