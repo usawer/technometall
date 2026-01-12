@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import emailjs from '@emailjs/browser';
 
 const slideUpVariants = {
     
@@ -54,43 +55,30 @@ const Contact = () => {
         setMessage(t('contact.sendingMessage'));
 
         try {
-            
-            const apiUrl = 'http://127.0.0.1:5000/api/send-email';
+            // EmailJS configuration - you'll need to set up your own service
+            const serviceId = 'your_service_id'; // Replace with your EmailJS service ID
+            const templateId = 'your_template_id'; // Replace with your EmailJS template ID
+            const publicKey = 'your_public_key'; // Replace with your EmailJS public key
 
-            const response = await fetch(apiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                subject: formData.subject,
+                message: formData.body,
+                to_email: 'info@technometall.hu' // Your email address
+            };
 
-            
-            if (!response.ok) {
-                let errorDetails = `Szerverhiba (Státusz: ${response.status}).`;
-                try {
-                    const errorJson = await response.json();
-                    errorDetails = errorJson.error || errorDetails;
-                } catch {
-                }
-
-                setStatus('error');
-                setMessage(`Hiba történt a küldés során: ${errorDetails}. Kérjük, ellenőrizze, hogy a Python szerver fut-e!`);
-                return; 
-            }
-
-           
-            const result = await response.json();
+            await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
             setStatus('success');
             setMessage(t('contact.successMessage'));
-            
+
             setFormData({ name: '', email: '', subject: '', body: '' });
 
         } catch (error) {
-            console.error("Hálózati hiba:", error);
+            console.error("Email sending error:", error);
             setStatus('error');
-            setMessage('A hálózati kapcsolat megszakadt, vagy érvénytelen JSON-t kaptunk. Kérjük, ellenőrizze, hogy a Python szerver fut-e!');
+            setMessage('Hiba történt az e-mail küldése során. Kérjük, próbálja újra később.');
         }
     };
 
