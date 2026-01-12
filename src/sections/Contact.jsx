@@ -56,9 +56,9 @@ const Contact = () => {
 
         try {
             // EmailJS configuration - you'll need to set up your own service
-            const serviceId = 'your_service_id'; // Replace with your EmailJS service ID
-            const templateId = 'your_template_id'; // Replace with your EmailJS template ID
-            const publicKey = 'your_public_key'; // Replace with your EmailJS public key
+            const serviceId = 'service_12345'; // Replace with your EmailJS service ID
+            const templateId = 'template_b2avu9s'; // Replace with your EmailJS template ID
+            const publicKey = 'ub6_8zfm1jligxMoR'; // Replace with your EmailJS public key
 
             const templateParams = {
                 from_name: formData.name,
