@@ -261,7 +261,7 @@ const Contact = () => {
                                 className="p-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 w-full focus:outline-none focus:border-blue-400 resize-none"
                             ></textarea>
                             
-                            {/* Visszajelző üzenet a gomb felett */}
+                        
                             <StatusMessage />
 
                             <motion.button
@@ -282,7 +282,7 @@ const Contact = () => {
 
                 </div>
 
-                {/* Térkép beágyazása (Pontos Google Maps jelölővel) */}
+           
                 <motion.div variants={slideUpVariants} className="w-full mt-10 rounded-xl overflow-hidden shadow-2xl border border-gray-700">
                     <h3 className="p-4 bg-gray-800 text-lg font-bold text-gray-200">{t('contact.locationTitle')}</h3>
                     {googleMapsIframe}
