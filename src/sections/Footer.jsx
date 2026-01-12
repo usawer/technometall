@@ -1,20 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// Az "animation" fájl most már létezik
+
 import { slideUpVariants } from './animation';
 import { useLanguage } from '../context/LanguageContext';
 import szechenyiLogo from '../assets/szechenyiLogo.png';
+import backgroundImg from '../assets/homeimg.png';
 
-// A Logó SVG-ben, helyettesíti a Technometal_logo.png-t a Tailwind kék színeivel
-const TechmetLogo = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-blue-400">
-        <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" strokeWidth="2"/>
-        {/* Felső, ferde metszésvonal */}
-        <path d="M5 8L19 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        {/* Alsó, V alakú fémmunka/hegesztés szimbólum */}
-        <path d="M7 16L12 11L17 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-);
+
+
 
 const Footer = () => {
     const { t } = useLanguage();
@@ -39,10 +32,9 @@ const Footer = () => {
             >
                 {/* 1. Oszlop: Cégnév és Leírás */}
                 <div className="flex flex-col space-y-4 max-w-sm">
-                    <motion.div variants={slideUpVariants} className="flex items-center space-x-3 text-xl font-extrabold text-white">
-                        <img src={szechenyiLogo} alt="Széchenyi Terv Plusz" className="w-10 h-10 object-contain" />
-                        <TechmetLogo />
-                        <span className="text-blue-400">TECHNO</span><span className="text-white">METALL Kft.</span>
+                    <motion.div variants={slideUpVariants} className="flex items-center space-x-2 text-xl font-extrabold text-white">
+                    
+                        <span className="text-blue-400">TECHNOMETALL</span><span className="text-white"> Kft.</span>
                     </motion.div>
                     <motion.p variants={slideUpVariants} className="text-sm">
                         {t('footer.description')}

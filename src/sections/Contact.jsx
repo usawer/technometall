@@ -2,21 +2,20 @@ import React, { useState } from "react";
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
-// Animációs variánsok, beágyazva a hibák elkerülése végett
 const slideUpVariants = {
-    // Kezdőállapot: Elem lentebb, átlátszatlan
+    
     hidden: { 
       y: 50, 
       opacity: 0 
     },
-    // Látható állapot: Elem a helyén, teljesen látható
+
     visible: { 
       y: 0, 
       opacity: 1, 
       transition: { 
         duration: 0.6, 
         ease: "easeOut",
-        staggerChildren: 0.1 // A benne lévő elemek animálása késleltetéssel
+        staggerChildren: 0.1 
       }
     },
 };
@@ -24,14 +23,13 @@ const slideUpVariants = {
 const Contact = () => {
     const { t } = useLanguage();
 
-    // Űrlap állapot kezelése
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         subject: '',
         body: ''
     });
-    const [status, setStatus] = useState('idle'); // 'idle', 'loading', 'success', 'error'
+    const [status, setStatus] = useState('idle'); 
     const [message, setMessage] = useState('');
 
     const contactInfo = {
@@ -40,7 +38,7 @@ const Contact = () => {
         email: "info@technometall.hu"
     };
 
-    // Kezeli a mezőváltozásokat
+   
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -48,7 +46,7 @@ const Contact = () => {
         });
     };
 
-    // Kezeli az űrlap elküldését
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -56,8 +54,7 @@ const Contact = () => {
         setMessage(t('contact.sendingMessage'));
 
         try {
-            // JAVÍTÁS: A helyi teszteléshez a teljes URL-t kell használni.
-            // Produkcióban (ha proxy-val fut) ez visszaváltható relatív útvonalra.
+            
             const apiUrl = 'http://127.0.0.1:5000/api/send-email';
 
             const response = await fetch(apiUrl, {
@@ -68,29 +65,26 @@ const Contact = () => {
                 body: JSON.stringify(formData),
             });
 
-            // Mivel most már tudjuk, hogy van esély arra, hogy nem JSON-t kapunk vissza (pl. 404 hiba),
-            // ezért a válasz (Response) sikerességét leellenőrizzük, mielőtt JSON-ként próbáljuk feldolgozni.
+            
             if (!response.ok) {
-                // Ha nem 200 OK a válasz, megpróbáljuk elolvasni a hibaüzenetet, ha van.
                 let errorDetails = `Szerverhiba (Státusz: ${response.status}).`;
                 try {
                     const errorJson = await response.json();
                     errorDetails = errorJson.error || errorDetails;
                 } catch {
-                    // Ha a válasz nem JSON (pl. sima HTML 404 oldal), akkor a fentebb definiált alapértelmezett hibaüzenetet használjuk.
                 }
 
                 setStatus('error');
                 setMessage(`Hiba történt a küldés során: ${errorDetails}. Kérjük, ellenőrizze, hogy a Python szerver fut-e!`);
-                return; // Megállítja a futást hiba esetén
+                return; 
             }
 
-            // Ha 200 OK a válasz, feldolgozzuk a JSON-t.
+           
             const result = await response.json();
 
             setStatus('success');
             setMessage(t('contact.successMessage'));
-            // Csak sikeres küldés esetén ürítjük a formot
+            
             setFormData({ name: '', email: '', subject: '', body: '' });
 
         } catch (error) {
@@ -100,7 +94,7 @@ const Contact = () => {
         }
     };
 
-    // Visszajelző üzenet komponens
+  
     const StatusMessage = () => {
         if (status === 'idle') return null;
 
@@ -150,7 +144,6 @@ const Contact = () => {
     }
 
 
-    // AZ IFRAME KÓDJA A PONTOS CÍMRE (változatlan)
     const googleMapsIframe = (
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.5663765106173!2d21.7135017158866!3d48.31828137924403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ed17d0d0d0d0d%3A0x6734c56789012345!2sS%C3%A1rospatak%2C%20Dork%C3%B3i%20%C3%BAt%201%2C%203950%20Hungary!5e0!3m2!1sen!2shu!4v1636905600000!5m2!1sen!2shu"
@@ -176,10 +169,10 @@ const Contact = () => {
                 
                 <div className="text-center">
                     <motion.h2 variants={slideUpVariants} className='text-blue-400 uppercase text-sm font-semibold tracking-widest'>
-                        {t('contact.sectionTitle')}
+                        {t('contact.title')}
                     </motion.h2>
                     <motion.h1 variants={slideUpVariants} className='text-white text-[40px] font-extrabold mt-1 mb-4'>
-                        {t('contact.mainTitle')}
+                        {t('contact.contactInfo')}
                     </motion.h1>
                     <div className='w-[120px] h-[6px] bg-blue-400 mx-auto'></div>
                 </div>
