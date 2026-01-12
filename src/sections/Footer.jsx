@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 // Az "animation" fájl most már létezik
 import { slideUpVariants } from './animation';
 import { useLanguage } from '../context/LanguageContext';
+import szechenyiLogo from '../assets/szechenyiLogo.png';
 
 // A Logó SVG-ben, helyettesíti a Technometal_logo.png-t a Tailwind kék színeivel
 const TechmetLogo = () => (
@@ -38,7 +39,8 @@ const Footer = () => {
             >
                 {/* 1. Oszlop: Cégnév és Leírás */}
                 <div className="flex flex-col space-y-4 max-w-sm">
-                    <motion.div variants={slideUpVariants} className="flex items-center space-x-2 text-xl font-extrabold text-white">
+                    <motion.div variants={slideUpVariants} className="flex items-center space-x-3 text-xl font-extrabold text-white">
+                        <img src={szechenyiLogo} alt="Széchenyi Terv Plusz" className="w-10 h-10 object-contain" />
                         <TechmetLogo />
                         <span className="text-blue-400">TECHNO</span><span className="text-white">METALL Kft.</span>
                     </motion.div>
