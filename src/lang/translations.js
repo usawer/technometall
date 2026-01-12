@@ -94,7 +94,7 @@ export const translations = {
       sendMessage: "Send Message 🚀",
       sendingMessage: "Sending message...",
       successTitle: "✅ Successful sending!",
-      successMessage: "Your message has been sent successfully! We will contact you soon. (See the console log on the server)",
+      successMessage: "Your message has been sent successfully! We will contact you soon.",
       close: "Close",
       errorTitle: "❌ An error occurred!",
       locationTitle: "Our Location: Sárospatak"
@@ -196,7 +196,7 @@ export const translations = {
       sendMessage: "Üzenet Küldése 🚀",
       sendingMessage: "Üzenet küldése folyamatban...",
       successTitle: "✅ Sikeres küldés!",
-      successMessage: "Az üzenetet sikeresen elküldtük! Hamarosan felvesszük Önnel a kapcsolatot. (Lásd a console logot a szerveren)",
+      successMessage: "Az üzenetet sikeresen elküldtük! Hamarosan felvesszük Önnel a kapcsolatot. ",
       close: "Bezárás",
       errorTitle: "❌ Hiba történt!",
       locationTitle: "Telephelyünk elhelyezkedése: Sárospatak"
