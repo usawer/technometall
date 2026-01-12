@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Link } from 'react-router-dom';
 
-// Import gallery images - using new high-quality images from jpeg directory
 import technometall from '../assets/Gallery/technometall.jpg';
 import szerszam1 from '../assets/Gallery/szerszam1.jpg';
 import dmu from '../assets/Gallery/DMU.jpg';
@@ -37,7 +36,7 @@ const slideUpVariants = {
 const Gallery = () => {
   const { t } = useLanguage();
 
-  // Gallery images data - using new high-quality images
+  
   const galleryImages = [
     {
       id: 1,
@@ -56,44 +55,44 @@ const Gallery = () => {
     {
       id: 3,
       src: cncMachine,
-      alt: 'Advanced CNC Machining Center',
-      title: 'Advanced CNC Machining Center',
-      description: 'State-of-the-art CNC technology for precision manufacturing'
+      alt: t('gallery.image3.title'),
+      title: t('gallery.image3.title'),
+      description: t('gallery.image3.description')
     },
     {
       id: 4,
       src: toolManufacturing,
-      alt: 'High-Precision Tool Manufacturing',
-      title: 'High-Precision Tool Manufacturing',
-      description: 'Custom-designed cold forming tools with exceptional accuracy'
+      alt: t('gallery.image4.title'),
+      title: t('gallery.image4.title'),
+      description: t('gallery.image4.description')
     },
     {
       id: 5,
       src: precisionParts,
-      alt: 'Precision Component Production',
-      title: 'Precision Component Production',
-      description: 'High-accuracy machined parts for automotive and industrial applications'
+      alt: t('gallery.image5.title'),
+      title: t('gallery.image5.title'),
+      description: t('gallery.image5.description')
     },
     {
       id: 6,
       src: assemblyLine,
-      alt: 'Complete Tool Assembly',
-      title: 'Complete Tool Assembly',
-      description: 'Professional assembly of large-scale tools and production equipment'
+      alt: t('gallery.image6.title'),
+      title: t('gallery.image6.title'),
+      description: t('gallery.image6.description')
     },
     {
       id: 7,
       src: qualityControl,
-      alt: 'Quality Control & Measurement',
-      title: 'Quality Control & Measurement',
-      description: 'Advanced metrology equipment ensuring precision and quality standards'
+      alt: t('gallery.image7.title'),
+      title: t('gallery.image7.title'),
+      description: t('gallery.image7.description')
     },
     {
       id: 8,
       src: specialMachines,
-      alt: 'Special Purpose Machinery',
-      title: 'Special Purpose Machinery',
-      description: 'Custom-designed special machines for increased manufacturing efficiency'
+      alt: t('gallery.image8.title'),
+      title: t('gallery.image8.title'),
+      description: t('gallery.image8.description')
     },
     {
       id: 9,

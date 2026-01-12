@@ -13,7 +13,7 @@ const ServiceCard = ({ title, description, icon }) => (
     </div>
 );
 
-// ÚJ KOMPONENS: Technológiai Kártya
+
 const TechSpecCard = ({ title, spec, details }) => (
     <div className="bg-gray-800/70 backdrop-blur-sm p-5 rounded-lg border border-gray-700 hover:border-blue-400 transition-all duration-300 shadow-xl flex flex-col justify-start h-full">
         {/* Felső rész: Kiemelt Specifikáció */}
@@ -35,7 +35,7 @@ const TechSpecCard = ({ title, spec, details }) => (
 const Services = () => {
     const { t } = useLanguage();
 
-    // ... (serviceItems változatlan) ...
+
     const serviceItems = [
         {
             title: t('services.service1Title'),
@@ -54,7 +54,6 @@ const Services = () => {
         }
     ];
 
-    // --- AZ ÚJ SZÖVEG STRUKTURÁLÁSA ÉS TARTALMA KÁRTYÁKHOZ ---
     const technologySpecs = [
         {
             title: t('services.tech1Title'),
@@ -105,7 +104,7 @@ const Services = () => {
         <div id='services' className="w-full py-[80px] bg-gray-900 text-white"> 
             <motion.div initial='hidden' whileInView='visible' variants={slideUpVariants} className='lg:w-[80%] w-[90%] m-auto flex flex-col justify-center items-center gap-[40px]'>
                 
-                {/* Felső szekció: Címek + 3D Animáció (Változatlan) */}
+    
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <div className="flex flex-col items-start text-left">
                         <motion.h2 variants={slideUpVariants} className='text-blue-400 uppercase text-sm font-semibold tracking-widest'>
@@ -128,7 +127,6 @@ const Services = () => {
                 <div className="w-full h-[1px] bg-gray-700/50 my-10"></div> 
 
 
-                {/* Szolgáltatások Grid/Kártyák (Változatlan) */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
                     {serviceItems.map((item, index) => (
                         <motion.div key={index} variants={slideUpVariants} custom={index}>
@@ -143,13 +141,13 @@ const Services = () => {
 
                 <div className="w-full h-[1px] bg-gray-700/50 my-10"></div> 
 
-                {/* ÚJ LUXUS BLOKK: Technológiai Kapacitás Kártyákban */}
+              
                 <motion.div variants={slideUpVariants} className="mt-12 w-full text-center">
                     <h2 className="text-3xl font-extrabold text-white mb-8">
                         {t('services.techTitle')}
                     </h2>
 
-                    {/* Technológia Kártyák Grid */}
+             
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
                         {technologySpecs.map((item, index) => (
                             <motion.div key={index} variants={slideUpVariants} custom={index}>
@@ -162,7 +160,7 @@ const Services = () => {
                         ))}
                     </div>
 
-                    {/* Kiegészítő információs sáv */}
+                   
                     <motion.div variants={slideUpVariants} className="mt-10 bg-gray-800/70 p-4 rounded-lg border-l-4 border-blue-400 w-full text-left text-white">
                         <p className="font-semibold text-lg text-gray-200">
                             {t('services.additionalInfo')}
@@ -172,7 +170,7 @@ const Services = () => {
                         </p>
                     </motion.div>
                 </motion.div>
-                {/* ---------------------------------------------------------- */}
+              
 
             </motion.div>
         </div>

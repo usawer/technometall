@@ -20,7 +20,7 @@ const Hero = () => {
         
         <div className='absolute inset-0 bg-black opacity-60'></div>
 
-        {/* Fő tartalom blokk (szöveg, gombok) */}
+ 
         <motion.div initial="hidden" whileInView="visible" variants={slideUpVariants} 
             className='relative z-10 lg:w-[60%] w-full flex flex-col justify-center items-start lg:gap-8 gap-4'
         > 

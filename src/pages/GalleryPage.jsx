@@ -16,6 +16,9 @@ import grindingOperations from '../assets/Gallery/jpeg/Technometall20130110_0050
 import heatTreatment from '../assets/Gallery/jpeg/Technometall20130110_0060.jpg';
 import wireEDM from '../assets/Gallery/jpeg/Technometall20130110_0035.jpg';
 import surfaceGrinding from '../assets/Gallery/jpeg/tos_sikkoszoru1.jpg';
+import dmu from '../assets/Gallery/DMU.jpg';
+import szerszam2 from '../assets/Gallery/szerszam2.jpg';
+import szerszam3 from '../assets/Gallery/szerszam3.jpg';
 
 const slideUpVariants = {
   hidden: {
@@ -45,7 +48,7 @@ const GalleryPage = () => {
       alt: t('gallery.image1.title'),
       title: t('gallery.image1.title'),
       description: t('gallery.image1.description'),
-      category: 'Company Overview'
+      category: t('categories.companyOverview')
     },
     {
       id: 2,
@@ -53,87 +56,87 @@ const GalleryPage = () => {
       alt: t('gallery.image2.title'),
       title: t('gallery.image2.title'),
       description: t('gallery.image2.description'),
-      category: 'Tool Manufacturing'
+      category: t('categories.toolManufacturing')
     },
     {
       id: 3,
       src: cncMachine,
-      alt: 'Advanced CNC Machining Center',
-      title: 'Advanced CNC Machining Center',
-      description: 'State-of-the-art CNC technology for precision manufacturing',
-      category: 'CNC Machining'
+      alt: t('gallery.image3.title'),
+      title: t('gallery.image3.title'),
+      description: t('gallery.image3.description'),
+      category: t('categories.cncMachining')
     },
     {
       id: 4,
       src: toolManufacturing,
-      alt: 'High-Precision Tool Manufacturing',
-      title: 'High-Precision Tool Manufacturing',
-      description: 'Custom-designed cold forming tools with exceptional accuracy',
-      category: 'Tool Manufacturing'
+      alt: t('gallery.image4.title'),
+      title: t('gallery.image4.title'),
+      description: t('gallery.image4.description'),
+      category: t('categories.toolManufacturing')
     },
     {
       id: 5,
       src: precisionParts,
-      alt: 'Precision Component Production',
-      title: 'Precision Component Production',
-      description: 'High-accuracy machined parts for automotive and industrial applications',
-      category: 'Component Manufacturing'
+      alt: t('gallery.image5.title'),
+      title: t('gallery.image5.title'),
+      description: t('gallery.image5.description'),
+      category: t('categories.componentManufacturing')
     },
     {
       id: 6,
       src: assemblyLine,
-      alt: 'Complete Tool Assembly',
-      title: 'Complete Tool Assembly',
-      description: 'Professional assembly of large-scale tools and production equipment',
-      category: 'Assembly'
+      alt: t('gallery.image6.title'),
+      title: t('gallery.image6.title'),
+      description: t('gallery.image6.description'),
+      category: t('categories.assembly')
     },
     {
       id: 7,
       src: qualityControl,
-      alt: 'Quality Control & Measurement',
-      title: 'Quality Control & Measurement',
-      description: 'Advanced metrology equipment ensuring precision and quality standards',
-      category: 'Quality Control'
+      alt: t('gallery.image7.title'),
+      title: t('gallery.image7.title'),
+      description: t('gallery.image7.description'),
+      category: t('categories.qualityControl')
     },
     {
       id: 8,
       src: specialMachines,
-      alt: 'Special Purpose Machinery',
-      title: 'Special Purpose Machinery',
-      description: 'Custom-designed special machines for increased manufacturing efficiency',
-      category: 'Special Machines'
+      alt: t('gallery.image8.title'),
+      title: t('gallery.image8.title'),
+      description: t('gallery.image8.description'),
+      category: t('categories.specialMachines')
     },
     {
       id: 9,
       src: grindingOperations,
-      alt: 'Surface Grinding Operations',
-      title: 'Surface Grinding Operations',
-      description: 'Precision surface and cylindrical grinding to ensure tolerances',
-      category: 'Grinding'
+      alt: t('gallery.image9.title'),
+      title: t('gallery.image9.title'),
+      description: t('gallery.image9.description'),
+      category: t('categories.grinding')
     },
     {
       id: 10,
       src: heatTreatment,
-      alt: 'Heat Treatment Excellence',
-      title: 'Heat Treatment Excellence',
-      description: 'Optimized material structure through professional heat treatment processes',
-      category: 'Heat Treatment'
+      alt: t('gallery.image10.title'),
+      title: t('gallery.image10.title'),
+      description: t('gallery.image10.description'),
+      category: t('categories.heatTreatment')
     },
     {
       id: 11,
       src: wireEDM,
-      alt: 'Wire EDM Machining',
-      title: 'Wire EDM Machining',
-      description: 'Complex shape machining in hard materials using advanced CNC wire EDM technology',
-      category: 'EDM'
+      alt: t('gallery.image11.title'),
+      title: t('gallery.image11.title'),
+      description: t('gallery.image11.description'),
+      category: t('categories.edm')
     },
     {
       id: 12,
       src: surfaceGrinding,
-      alt: 'Advanced Surface Grinding',
-      title: 'Advanced Surface Grinding',
-      description: 'High-precision surface grinding operations for superior surface quality',
-      category: 'Grinding'
+      alt: t('gallery.image12.title'),
+      title: t('gallery.image12.title'),
+      description: t('gallery.image12.description'),
+      category: t('categories.grinding')
     },
     {
       id: 13,
@@ -141,23 +144,23 @@ const GalleryPage = () => {
       alt: t('gallery.image10.title'),
       title: t('gallery.image10.title'),
       description: t('gallery.image10.description'),
-      category: 'CNC Machining'
+      category: t('categories.cncMachining')
     },
     {
       id: 14,
       src: szerszam2,
-      alt: t('gallery.image12.title'),
-      title: t('gallery.image12.title'),
-      description: t('gallery.image12.description'),
-      category: 'Tool Manufacturing'
+      alt: t('gallery.image14.title'),
+      title: t('gallery.image14.title'),
+      description: t('gallery.image14.description'),
+      category: t('categories.toolManufacturing')
     },
     {
       id: 15,
       src: szerszam3,
-      alt: t('gallery.image13.title'),
-      title: t('gallery.image13.title'),
-      description: t('gallery.image13.description'),
-      category: 'Tool Manufacturing'
+      alt: t('gallery.image15.title'),
+      title: t('gallery.image15.title'),
+      description: t('gallery.image15.description'),
+      category: t('categories.toolManufacturing')
     }
   ];
 
@@ -232,7 +235,7 @@ const GalleryPage = () => {
           ))}
         </motion.div>
 
-        {/* Contact CTA */}
+        
         <motion.div variants={slideUpVariants} className="text-center mt-8">
           <p className="text-gray-600 mb-4">
             {t('gallery.contactText', 'Want to see your project in our gallery? Contact us for a quote!')}
@@ -249,7 +252,7 @@ const GalleryPage = () => {
         </motion.div>
       </motion.div>
 
-      {/* Modal for enlarged image view */}
+    
       {selectedImage && (
         <motion.div
           initial={{ opacity: 0 }}

@@ -113,8 +113,8 @@ export const translations = {
         description: "Professional assembly of large-scale tools using our 80-ton closing force press and crane systems."
       },
       image7: {
-        title: "Wire EDM Machining",
-        description: "Complex shape machining in hard materials using advanced CNC wire EDM technology."
+        title: "Quality Control & Measurement",
+        description: "Advanced metrology equipment ensuring precision and quality standards."
       },
       image8: {
         title: "Surface Grinding Operations",
@@ -129,14 +129,22 @@ export const translations = {
         description: "High-precision DMU machining center for complex 5-axis operations and superior surface finish quality."
       },
       image11: {
+        title: "Wire EDM Machining",
+        description: "Complex shape machining in hard materials using advanced CNC wire EDM technology."
+      },
+      image12: {
+        title: "Advanced Surface Grinding",
+        description: "High-precision surface grinding operations for superior surface quality."
+      },
+      image13: {
         title: "Advanced Tool Manufacturing - Szerszam1",
         description: "Precision cold forming tools designed for automotive industry applications with exceptional durability."
       },
-      image12: {
+      image14: {
         title: "Progressive Die System - Szerszam2",
         description: "Advanced progressive stamping dies for high-volume production of complex metal components."
       },
-      image13: {
+      image15: {
         title: "Injection Mold Design - Szerszam3",
         description: "Sophisticated injection molding tools engineered for precision plastic and aluminum casting applications."
       }
@@ -161,6 +169,18 @@ export const translations = {
       close: "Close",
       errorTitle: "❌ An error occurred!",
       locationTitle: "Our Location: Sárospatak"
+    },
+    categories: {
+      companyOverview: 'Company Overview',
+      toolManufacturing: 'Tool Manufacturing',
+      cncMachining: 'CNC Machining',
+      qualityControl: 'Quality Control',
+      componentManufacturing: 'Component Manufacturing',
+      assembly: 'Assembly',
+      specialMachines: 'Special Machines',
+      grinding: 'Grinding',
+      heatTreatment: 'Heat Treatment',
+      edm: 'EDM'
     },
     // Add more sections as needed
   },
@@ -266,20 +286,20 @@ export const translations = {
         description: "5-tengelyes CNC marási műveletek komplex geometriákhoz és nagy pontosságú alkatrészgyártáshoz."
       },
       image4: {
-        title: "Precíziós Alkatrészgyártás",
-        description: "Nagy pontosságú forgácsolt alkatrészek gyártása ügyfél specifikációk és műszaki követelmények szerint."
+        title: "Nagy Pontosságú Szerszámgyártás",
+        description: "Egyedi tervezésű hidegalakító szerszámok kivételes pontossággal és tartóssággal az autóipar számára."
       },
       image5: {
-        title: "Hőkezelési Kiválóság",
-        description: "Optimalizált anyagszerkezet professzionális hőkezelési folyamatokon keresztül az alkatrészek tartósságának növelésére."
+        title: "Precíziós Alkatrészgyártás",
+        description: "Nagy pontosságú forgácsolt alkatrészek gyártása ügyfél specifikációk és műszaki követelmények szerint."
       },
       image6: {
         title: "Komplett Szerszám Összeszerelés",
         description: "Nagyméretű szerszámok professzionális összeszerelése 80 tonnás záróerő présünkkel és darurendszerünkkel."
       },
       image7: {
-        title: "Huzalszikra Forgácsolás",
-        description: "Összetett formák megmunkálása kemény anyagokban fejlett CNC huzalszikra technológiával."
+        title: "Minőségellenőrzés és Mérések",
+        description: "Fejlett mérőműszerek a pontosság és minőségi szabványok biztosítására."
       },
       image8: {
         title: "Felületköszörülési Műveletek",
@@ -294,14 +314,22 @@ export const translations = {
         description: "Nagy pontosságú DMU megmunkáló központ komplex 5-tengelyes műveletekhez és kiváló felületi minőséghez."
       },
       image11: {
+        title: "Huzalszikra Forgácsolás",
+        description: "Összetett formák megmunkálása kemény anyagokban fejlett CNC huzalszikra technológiával."
+      },
+      image12: {
+        title: "Fejlett Felületköszörülés",
+        description: "Nagy pontosságú felületköszörülési műveletek kiváló felületi minőség érdekében."
+      },
+      image13: {
         title: "Fejlett Szerszámgyártás - Szerszam1",
         description: "Precíziós hidegalakító szerszámok az autóipar számára kivételes tartóssággal és pontossággal."
       },
-      image12: {
+      image14: {
         title: "Sorozatszerszám Rendszer - Szerszam2",
         description: "Fejlett sorozatos stancoló szerszámok nagy mennyiségű komplex fém alkatrészek gyártásához."
       },
-      image13: {
+      image15: {
         title: "Fröccsöntő Szerszám Tervezés - Szerszam3",
         description: "Sofisztikált fröccsöntő szerszámok precíziós műanyag és alumínium öntési alkalmazásokhoz."
       }
@@ -326,6 +354,18 @@ export const translations = {
       close: "Bezárás",
       errorTitle: "❌ Hiba történt!",
       locationTitle: "Telephelyünk elhelyezkedése: Sárospatak"
+    },
+    categories: {
+      companyOverview: 'Cégáttekintés',
+      toolManufacturing: 'Szerszámgyártás',
+      cncMachining: 'CNC Megmunkálás',
+      qualityControl: 'Minőségellenőrzés',
+      componentManufacturing: 'Alkatrészgyártás',
+      assembly: 'Összeszerelés',
+      specialMachines: 'Speciális Gépek',
+      grinding: 'Köszörülés',
+      heatTreatment: 'Hőkezelés',
+      edm: 'EDM'
     },
     // Add more sections as needed
   }
