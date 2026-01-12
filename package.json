@@ -1,12 +1,12 @@
 {
-  "homepage": "http://technometall.github.io/react-gh-pages",
+  "homepage": "https://technometall.github.io/technometall",
   "name": "technometall",
   "private": true,
   "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=./",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
      "predeploy": "npm run build",
