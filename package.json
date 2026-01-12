@@ -1,7 +1,7 @@
 {
-  "homepage": "https://technometall.github.io/technometall",
+  "homepage": "https://usawer.github.io/technometall/",
   "name": "technometall",
-  "private": true,
+ 
   "version": "1.2.0",
   "type": "module",
   "scripts": {
