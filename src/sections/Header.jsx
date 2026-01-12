@@ -23,6 +23,9 @@ const Header = () => {
           <a href="#portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">
             {t('header.portfolio')}
           </a>
+          <a href="#gallery" className="text-gray-700 hover:text-blue-600 transition-colors">
+            {t('header.gallery')}
+          </a>
           <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">
             {t('header.contact')}
           </a>

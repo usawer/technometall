@@ -23,6 +23,7 @@ const slideUpVariants = {
 
 const Contact = () => {
     const { t } = useLanguage();
+    const form = useRef();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -30,7 +31,7 @@ const Contact = () => {
         subject: '',
         body: ''
     });
-    const [status, setStatus] = useState('idle'); 
+    const [status, setStatus] = useState('idle');
     const [message, setMessage] = useState('');
 
     const contactInfo = {
@@ -55,20 +56,11 @@ const Contact = () => {
         setMessage(t('contact.sendingMessage'));
 
         try {
-            // EmailJS configuration - you'll need to set up your own service
-            const serviceId = 'service_fqp6ei4'; // Replace with your EmailJS service ID
-            const templateId = 'template_b2avu9s'; // Replace with your EmailJS template ID
-            const publicKey = 'ub6_8zfm1jligxMoR'; // Replace with your EmailJS public key
+            const serviceId = 'service_fqp6ei4';
+            const templateId = 'template_b2avu9s';
+            const publicKey = 'ub6_8zfm1jligxMoR';
 
-            const templateParams = {
-                from_name: formData.name,
-                from_email: formData.email,
-                subject: formData.subject,
-                message: formData.body,
-                email: 'lph844541@gmail.com' // Recipient email for EmailJS template
-            };
-
-            await emailjs.send(serviceId, templateId, templateParams, publicKey);
+            await emailjs.sendForm(serviceId, templateId, form.current, publicKey);
 
             setStatus('success');
             setMessage(t('contact.successMessage'));
@@ -201,6 +193,7 @@ const Contact = () => {
                         <h3 className="text-2xl font-bold text-white mb-6">{t('contact.quickMessage')}</h3>
 
                         <form
+                            ref={form}
                             className="space-y-4"
                             onSubmit={handleSubmit}
                         >

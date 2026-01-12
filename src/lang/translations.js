@@ -5,13 +5,14 @@ export const translations = {
       about: "About",
       services: "Services",
       portfolio: "Portfolio",
+      gallery: "Gallery",
       contact: "Contact",
       language: "Language"
     },
     hero: {
       title: "Technometall",
       subtitle: "Shaping the Future of Aluminum with Innovation",
-      description: "\"Our Hungarian-owned aluminum foundry offers premium quality die-castings and precision-machined components for our automotive, machinery, and electrical industry partners – with advanced technology and sustainable development.\"",
+      description: "Technometall Ltd. has specialized in the design and man-ufacturing of aluminum die-casting and trimming tools,primarily for end users in automotive industry as well aselectrical and machine industry.",
       button1: "Learn More",
       button2: "Contact"
     },
@@ -78,6 +79,68 @@ export const translations = {
       email: "info@technometall.hu",
       copyright: "© {year} Technometall Kft. All rights reserved."
     },
+    gallery: {
+      title: "OUR REFERENCE WORKS",
+      mainTitle: "Machine Gallery",
+      description: "Explore our portfolio of precision machining, tool manufacturing, and special machine projects. Each piece represents our commitment to quality and innovation.",
+      viewFullGallery: "View Full Gallery",
+      contactText: "Want to see your project in our gallery? Contact us for a quote!",
+      contactButton: "Get Quote",
+      backToHome: "Back to Home",
+      // Gallery image descriptions
+      image1: {
+        title: "Technometall Company Overview",
+        description: "Our modern production facility equipped with state-of-the-art machinery for precision manufacturing."
+      },
+      image2: {
+        title: "High-Precision Tool Manufacturing",
+        description: "Custom-designed cold forming tools with exceptional accuracy and durability for automotive industry applications."
+      },
+      image3: {
+        title: "Advanced CNC Machining Center",
+        description: "5-axis CNC milling operations for complex geometries and high-precision component manufacturing."
+      },
+      image4: {
+        title: "Precision Component Production",
+        description: "High-accuracy machined parts manufactured according to customer specifications and technical requirements."
+      },
+      image5: {
+        title: "Heat Treatment Excellence",
+        description: "Optimized material structure through professional heat treatment processes for enhanced component durability."
+      },
+      image6: {
+        title: "Complete Tool Assembly",
+        description: "Professional assembly of large-scale tools using our 80-ton closing force press and crane systems."
+      },
+      image7: {
+        title: "Wire EDM Machining",
+        description: "Complex shape machining in hard materials using advanced CNC wire EDM technology."
+      },
+      image8: {
+        title: "Surface Grinding Operations",
+        description: "Precision surface and cylindrical grinding to ensure tolerances and superior surface quality."
+      },
+      image9: {
+        title: "Special Purpose Machinery",
+        description: "Custom-designed special machines and automated production aids for increased manufacturing efficiency."
+      },
+      image10: {
+        title: "DMU CNC Machining Center",
+        description: "High-precision DMU machining center for complex 5-axis operations and superior surface finish quality."
+      },
+      image11: {
+        title: "Advanced Tool Manufacturing - Szerszam1",
+        description: "Precision cold forming tools designed for automotive industry applications with exceptional durability."
+      },
+      image12: {
+        title: "Progressive Die System - Szerszam2",
+        description: "Advanced progressive stamping dies for high-volume production of complex metal components."
+      },
+      image13: {
+        title: "Injection Mold Design - Szerszam3",
+        description: "Sophisticated injection molding tools engineered for precision plastic and aluminum casting applications."
+      }
+    },
     contact: {
       subtitle: "CONTACT AND REACHABILITY",
       title: "Request a Quote Today",
@@ -107,13 +170,14 @@ export const translations = {
       about: "Rólunk",
       services: "Szolgáltatások",
       portfolio: "Portfólió",
+      gallery: "Galéria",
       contact: "Kapcsolat",
       language: "Nyelv"
     },
     hero: {
       title: "Technometall",
       subtitle: "Innovációval formáljuk az alumínium jövőjét",
-      description: "\"Magyar tulajdonú alumíniumöntödénk prémium minőségű nyomásos öntvényeket és precíz megmunkált alkatrészeket kínál autóipari, gép- és villamosipari partnereink számára – fejlett technológiával, fenntartható fejlesztéssel.\"",
+      description: "A Technometall Kft. alumínium nyomásos öntőszerszá-mok, valamint stancoló szerszámok tervezésére és gyár-tására szakosodott, elsősorban járműipari, elektromosipari, valamint gépipari végfelhasználók számára.",
       button1: "Tovább",
       button2: "Kapcsolat"
     },
@@ -179,6 +243,68 @@ export const translations = {
       phone: "+36 96 123 4567",
       email: "info@technometall.hu",
       copyright: "© {year} Technometall Kft. Minden jog fenntartva."
+    },
+    gallery: {
+      title: "REFERENCIA MUNKÁINK",
+      mainTitle: "Galéria",
+      description: "Fedezze fel precíz megmunkálási, szerszámgyártási és speciális gép projektjeink portfólióját. Minden darab a minőség iránti elkötelezettségünket és innovációs szellemünket képviseli.",
+      viewFullGallery: "Teljes Galéria Megtekintése",
+      contactText: "Szeretné látni projektjét a galériánkban? Vegye fel velünk a kapcsolatot árajánlatért!",
+      contactButton: "Ajánlat Kérés",
+      backToHome: "Vissza a Főoldalra",
+      // Gallery image descriptions
+      image1: {
+        title: "Technometall Cégáttekintés",
+        description: "Modern gyártóüzemünk korszerű gépekkel felszerelve a precíziós gyártáshoz."
+      },
+      image2: {
+        title: "Nagy Pontosságú Szerszámgyártás",
+        description: "Egyedi tervezésű hidegalakító szerszámok kivételes pontossággal és tartóssággal az autóipar számára."
+      },
+      image3: {
+        title: "Fejlett CNC Megmunkáló Központ",
+        description: "5-tengelyes CNC marási műveletek komplex geometriákhoz és nagy pontosságú alkatrészgyártáshoz."
+      },
+      image4: {
+        title: "Precíziós Alkatrészgyártás",
+        description: "Nagy pontosságú forgácsolt alkatrészek gyártása ügyfél specifikációk és műszaki követelmények szerint."
+      },
+      image5: {
+        title: "Hőkezelési Kiválóság",
+        description: "Optimalizált anyagszerkezet professzionális hőkezelési folyamatokon keresztül az alkatrészek tartósságának növelésére."
+      },
+      image6: {
+        title: "Komplett Szerszám Összeszerelés",
+        description: "Nagyméretű szerszámok professzionális összeszerelése 80 tonnás záróerő présünkkel és darurendszerünkkel."
+      },
+      image7: {
+        title: "Huzalszikra Forgácsolás",
+        description: "Összetett formák megmunkálása kemény anyagokban fejlett CNC huzalszikra technológiával."
+      },
+      image8: {
+        title: "Felületköszörülési Műveletek",
+        description: "Precíziós sík- és palástköszörülés a toleranciák biztosítása és kiváló felületi minőség érdekében."
+      },
+      image9: {
+        title: "Speciális Célgépek",
+        description: "Egyedi tervezésű speciális gépek és automatizált gyártást segítő berendezések a megnövelt gyártási hatékonyságért."
+      },
+      image10: {
+        title: "DMU CNC Megmunkáló Központ",
+        description: "Nagy pontosságú DMU megmunkáló központ komplex 5-tengelyes műveletekhez és kiváló felületi minőséghez."
+      },
+      image11: {
+        title: "Fejlett Szerszámgyártás - Szerszam1",
+        description: "Precíziós hidegalakító szerszámok az autóipar számára kivételes tartóssággal és pontossággal."
+      },
+      image12: {
+        title: "Sorozatszerszám Rendszer - Szerszam2",
+        description: "Fejlett sorozatos stancoló szerszámok nagy mennyiségű komplex fém alkatrészek gyártásához."
+      },
+      image13: {
+        title: "Fröccsöntő Szerszám Tervezés - Szerszam3",
+        description: "Sofisztikált fröccsöntő szerszámok precíziós műanyag és alumínium öntési alkalmazásokhoz."
+      }
     },
     contact: {
       subtitle: "KAPCSOLAT ÉS ELÉRHETŐSÉG",
