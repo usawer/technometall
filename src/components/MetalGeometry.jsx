@@ -26,7 +26,7 @@ function Loader() {
  * FONTOS: a fájl legyen a public/models mappában!
  */
 function Model({ scale = 1.0 }) {
-  const gltf = useGLTF("models/cnc_machine.glb");
+  const gltf = useGLTF(import.meta.env.BASE_URL + "models/cnc_machine.glb");
   const ref = useRef();
 
   useFrame((state, delta) => {
