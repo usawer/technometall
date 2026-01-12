@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 // Import gallery images - using diverse high-quality images from jpeg directory
 import technometall from '../assets/Gallery/technometall.jpg';
 import szerszam1 from '../assets/Gallery/szerszam1.jpg';
-import dmu from '../assets/Gallery/DMU.jpg';
+import dmu from ('../assets/Gallery/dmu.jpg'); 
 import szerszam2 from '../assets/Gallery/szerszam2.jpg';
 import szerszam3 from '../assets/Gallery/szerszam3.jpg';
 import cncMachine from '../assets/Gallery/jpeg/Technometall20130110_0001.jpg';
