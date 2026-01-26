@@ -7,6 +7,9 @@ import Portfolio from './sections/Portfolio'
 import Services from './sections/Services'
 import Gallery from './sections/Gallery'
 import GalleryPage from './pages/GalleryPage'
+import CareerPage from './pages/CareerPage'
+import NewsPage from './pages/NewsPage'
+import TendersPage from './pages/TendersPage'
 import Footer from './sections/Footer'
 import Contact from './sections/Contact'
 import { LanguageProvider } from './context/LanguageContext'
@@ -38,6 +41,20 @@ const App = () => {
             <>
               <Header/>
               <CareerPage/>
+              <Footer/>
+            </>
+          } />
+          <Route path="/hirek" element={
+            <>
+              <Header/>
+              <NewsPage/>
+              <Footer/>
+            </>
+          } />
+          <Route path="/palyazat" element={
+            <>
+              <Header/>
+              <TendersPage/>
               <Footer/>
             </>
           } />

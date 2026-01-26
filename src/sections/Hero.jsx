@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import backgroundImg from '../assets/homeimg.png';
+import videoSrc from '../assets/Technometall.mp4';
 import {motion} from 'framer-motion';
 import { slideUpVariants, zoomInVariants } from './animation'
 import { useLanguage } from '../context/LanguageContext';
@@ -7,7 +9,7 @@ import { useLanguage } from '../context/LanguageContext';
 import szechenyiLogo from '../assets/szechenyiLogo.png';
 
 
-const SZECHENYI_OLDAL_LINKJE = "https://www.palyazat.gov.hu/"; 
+const SZECHENYI_OLDAL_LINKJE = "/palyazat";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -42,18 +44,16 @@ const Hero = () => {
         </motion.div>
         
        
-        <a 
-            href={SZECHENYI_OLDAL_LINKJE} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className='fixed bottom-0 right-0 z-50 transition-transform duration-300 hover:scale-[1.02]' 
+        <Link
+            to={SZECHENYI_OLDAL_LINKJE}
+            className='fixed bottom-0 right-0 z-50 transition-transform duration-300 hover:scale-110'
         >
-            <img 
-                src={szechenyiLogo} 
-                alt="Széchenyi Terv Plusz támogatási logó" 
-                className='w-[160px] h-auto lg:w-[180px]' 
+            <img
+                src={szechenyiLogo}
+                alt="Széchenyi Terv Plusz támogatási logó"
+                className='w-[160px] h-auto lg:w-[180px]'
             />
-        </a>
+        </Link>
         
 
     </div>

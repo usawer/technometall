@@ -6,6 +6,7 @@ export const translations = {
       services: "Services",
       portfolio: "Portfolio",
       gallery: "Gallery",
+      career: "Career",
       contact: "Contact",
       language: "Language"
     },
@@ -75,8 +76,8 @@ export const translations = {
       contact: "Contact",
       contactInfo: "Contact Information",
       address: "3950 Sárospatak, Dorkói út 1.",
-      phone: "+36 96 123 4567",
       email: "info@technometall.hu",
+      facebook: "https://www.facebook.com/technometall",
       copyright: "© {year} Technometall Kft. All rights reserved."
     },
     gallery: {
@@ -149,6 +150,38 @@ export const translations = {
         description: "Sophisticated injection molding tools engineered for precision plastic and aluminum casting applications."
       }
     },
+    portfolio: {
+      title: "OUR PORTFOLIO",
+      mainTitle: "Portfolio",
+      description: "Discover our diverse portfolio of projects showcasing expertise in precision machining, tool manufacturing, and innovative solutions.",
+      viewFullPortfolio: "View Full Portfolio",
+      contactButton: "Get Quote",
+      // Portfolio project descriptions
+      project1: {
+        title: "Aluminum Die-Casting Tools",
+        description: "Custom-designed tools for automotive aluminum casting with high precision and durability."
+      },
+      project2: {
+        title: "CNC Machining Solutions",
+        description: "Advanced CNC machining services for complex geometries and high-accuracy components."
+      },
+      project3: {
+        title: "Special Purpose Machines",
+        description: "Innovative special machines designed to enhance manufacturing productivity and efficiency."
+      },
+      project4: {
+        title: "Precision Grinding Services",
+        description: "Surface and cylindrical grinding operations ensuring superior quality and tolerances."
+      },
+      project5: {
+        title: "Tool Assembly & Integration",
+        description: "Complete tool assembly services using state-of-the-art equipment and expertise."
+      },
+      project6: {
+        title: "Quality Control Systems",
+        description: "Advanced metrology and quality control solutions for manufacturing excellence."
+      }
+    },
     contact: {
       subtitle: "CONTACT AND REACHABILITY",
       title: "Request a Quote Today",
@@ -162,7 +195,7 @@ export const translations = {
       subject: "Subject / Service Type",
       message: "Message / Detailed Quote Request *",
       sending: "Sending...",
-      sendMessage: "Send Message 🚀",
+      sendMessage: "Send Message ",
       sendingMessage: "Sending message...",
       successTitle: "✅ Successful sending!",
       successMessage: "Your message has been sent successfully! We will contact you soon.",
@@ -182,6 +215,38 @@ export const translations = {
       heatTreatment: 'Heat Treatment',
       edm: 'EDM'
     },
+    tenders: {
+      title: "Tenders",
+      description: "Explore Technometall Kft.'s successful tender projects.",
+      moreDetails: "More details about the project content",
+      project1: {
+        title: "\"TECHNOMETALL\" Kft. production/manufacturing and marketing innovation project",
+        code: "(GINOP PLUSZ-2.1.3-24-2024-00322)"
+      },
+      project2: {
+        title: "\"Capacity-expanding complex investment at Technometall Kft.\"",
+        code: "(GINOP PLUSZ-1.2.3-21-2022-01145)"
+      },
+      project3: {
+        title: "\"Capacity-expanding developments at Technometall Kft.\"",
+        code: "(GINOP-1.2.2-16-2017-01262)"
+      },
+      project4: {
+        title: "\"Development of two-cavity tool related to automotive supply\"",
+        code: "(GINOP-2.1.2-8-1-4-16-2017-00294)"
+      },
+      project5: {
+        title: "\"Energy development at Technometall Kft. headquarters\"",
+        code: "(GINOP-4.1.1-8-4-4-16-2018-00346)"
+      }
+    },
+    career: {
+      title: "Career Opportunities",
+      description: "Join our team at Technometall Kft. and contribute to innovative metalworking solutions.",
+      noOpenings: "Currently, there are no open positions. Please check back later or contact us for future opportunities.",
+      contactUs: "Contact Us",
+      applyNow: "Apply Now"
+    },
     // Add more sections as needed
   },
   hu: {
@@ -191,6 +256,7 @@ export const translations = {
       services: "Szolgáltatások",
       portfolio: "Portfólió",
       gallery: "Galéria",
+      career: "Karrier",
       contact: "Kapcsolat",
       language: "Nyelv"
     },
@@ -260,8 +326,8 @@ export const translations = {
       contact: "Kapcsolat",
       contactInfo: "Elérhetőségek",
       address: "3950 Sárospatak, Dorkói út 1.",
-      phone: "+36 96 123 4567",
       email: "info@technometall.hu",
+      facebook: "https://www.facebook.com/technometall",
       copyright: "© {year} Technometall Kft. Minden jog fenntartva."
     },
     gallery: {
@@ -347,7 +413,7 @@ export const translations = {
       subject: "Tárgy / Szolgáltatás típusa",
       message: "Üzenet / Részletes Ajánlatkérés *",
       sending: "Küldés...",
-      sendMessage: "Üzenet Küldése 🚀",
+      sendMessage: "Üzenet Küldése ",
       sendingMessage: "Üzenet küldése folyamatban...",
       successTitle: "✅ Sikeres küldés!",
       successMessage: "Az üzenetet sikeresen elküldtük! Hamarosan felvesszük Önnel a kapcsolatot. ",
@@ -366,6 +432,63 @@ export const translations = {
       grinding: 'Köszörülés',
       heatTreatment: 'Hőkezelés',
       edm: 'EDM'
+    },
+    portfolio: {
+      title: "PORTFÓLIÓNK",
+      mainTitle: "Portfólió",
+      description: "Fedezze fel projektjeink sokszínű portfólióját, amelyek szakértelmünket mutatják a precíz megmunkálásban, szerszámgyártásban és innovatív megoldásokban.",
+      viewFullPortfolio: "Teljes Portfólió Megtekintése",
+      contactButton: "Ajánlat Kérés",
+      // Portfolio project descriptions
+      project1: {
+        title: "Alumínium nyomóöntő szerszámok",
+        description: "Egyedi tervezésű szerszámok az autóipari alumínium öntéshez nagy pontossággal és tartóssággal."
+      },
+      project2: {
+        title: "CNC megmunkálási megoldások",
+        description: "Fejlett CNC megmunkálási szolgáltatások komplex geometriákhoz és nagy pontosságú alkatrészekhez."
+      },
+      project3: {
+        title: "Speciális célgépek",
+        description: "Innovatív speciális gépek tervezése a gyártási termelékenység és hatékonyság növelésére."
+      },
+      project4: {
+        title: "Precíziós köszörülési szolgáltatások",
+        description: "Sík- és palástköszörülési műveletek kiváló minőség és toleranciák biztosítására."
+      },
+      project5: {
+        title: "Szerszám összeszerelés és integráció",
+        description: "Teljes szerszám összeszerelési szolgáltatások korszerű berendezésekkel és szakértelemmel."
+      },
+      project6: {
+        title: "Minőségellenőrzési rendszerek",
+        description: "Fejlett metrológiai és minőségellenőrzési megoldások a gyártási kiválóságért."
+      }
+    },
+    tenders: {
+      title: "Pályázatok",
+      description: "Fedezze fel a Technometall Kft. sikeres pályázati projektjeit.",
+      moreDetails: "Részletesebben a projekt tartalma",
+      project1: {
+        title: "\"TECHNOMETALL\" Kft. termelés/gyártás és marketing innovációs projektje",
+        code: "(GINOP PLUSZ-2.1.3-24-2024-00322)"
+      },
+      project2: {
+        title: "\"Kapacitásbővítő komplex beruházás a Technometall Kft-nél\"",
+        code: "(GINOP PLUSZ-1.2.3-21-2022-01145)"
+      },
+      project3: {
+        title: "\"Kapacitásbővítést jelentő fejlesztések a Technometall Kft.-nél\"",
+        code: "(GINOP-1.2.2-16-2017-01262)"
+      },
+      project4: {
+        title: "\"Autóipari beszállításhoz kapcsolódó kétfészkes szerszám kifejlesztése\"",
+        code: "(GINOP-2.1.2-8-1-4-16-2017-00294)"
+      },
+      project5: {
+        title: "\"Energetikai fejlesztés a Technometall Kft. székhelyén\"",
+        code: "(GINOP-4.1.1-8-4-4-16-2018-00346)"
+      }
     },
     // Add more sections as needed
   }

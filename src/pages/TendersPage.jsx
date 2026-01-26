@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 const TendersPage = () => {
   const { t } = useLanguage();
 
-
+  // Placeholder tenders data - you can replace this with real data
   const tenders = [
     {
       id: 1,
@@ -86,7 +86,7 @@ const TendersPage = () => {
             <h2 className="text-2xl font-semibold text-gray-900 mb-2">{t('tenders.project5.title')}</h2>
             <p className="text-gray-600 mb-4">{t('tenders.project5.code')}</p>
             <button
-              onClick={() => window.location.href = './src/assets/otosprojekt.pdf '}
+              onClick={() => window.location.href = './src/assets/otosprojekt.pdf'}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
             >
               {t('tenders.moreDetails')}
