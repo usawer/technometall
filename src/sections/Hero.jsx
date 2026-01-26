@@ -13,12 +13,19 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <div id="hero" 
-        className='relative w-full lg:h-[700px] h-fit m-auto pt-[100px] pb-[100px] lg:px-[150px] px-[20px] bg-cover bg-center' 
-        style={{backgroundImage: `url(${backgroundImg})`}}
+    <div id="hero"
+        className='relative w-full lg:h-[700px] h-fit m-auto pt-[100px] pb-[100px] lg:px-[150px] px-[20px] bg-cover bg-center'
     >
-        
-        <div className='absolute inset-0 bg-black opacity-60'></div>
+        <video
+            className='absolute inset-0 w-full h-full object-cover z-0'
+            autoPlay
+            loop
+            muted
+            playsInline
+        >
+            <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className='absolute inset-0 bg-black opacity-60 z-5'></div>
 
  
         <motion.div initial="hidden" whileInView="visible" variants={slideUpVariants} 

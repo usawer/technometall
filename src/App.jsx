@@ -34,6 +34,13 @@ const App = () => {
               <Footer/>
             </>
           } />
+          <Route path="/karrier" element={
+            <>
+              <Header/>
+              <CareerPage/>
+              <Footer/>
+            </>
+          } />
         </Routes>
       </Router>
     </LanguageProvider>

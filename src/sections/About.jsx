@@ -12,7 +12,7 @@ const About = () => {
     <div className='bg-white text-gray-800' id='about'> 
         
        
-        <div className="w-full h-[300px] bg-cover bg-center" style={{backgroundImage: 'url(/assets/images/szechenyiLogo.jpeg)'}}>
+        <div className="w-full h-[300px] bg-cover bg-center" style={{backgroundImage: 'url(/assets/images/szeche    nyiLogo.jpeg)'}}>
             
         </div>
 
