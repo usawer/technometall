@@ -17,7 +17,7 @@ import { LanguageProvider } from './context/LanguageContext'
 const App = () => {
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename="/technometall">
         <Routes>
           <Route path="/" element={
             <>
