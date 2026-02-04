@@ -41,12 +41,12 @@ const TendersPage = () => {
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold text-gray-900 mb-2">{t('tenders.project1.title')}</h2>
             <p className="text-gray-600 mb-4">{t('tenders.project1.code')}</p>
-            <button
-              onClick={() => window.location.href = './src/assets/egyesprojekt.pdf'}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold   py-2 px-4 rounded transition-colors duration-300"
-            >
-              {t('tenders.moreDetails')}
-            </button>
+    <button
+  onClick={() => window.open(`${process.env.PUBLIC_URL}/egyesprojekt.pdf`, '_blank')}
+  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
+>
+  {t('tenders.moreDetails')}
+</button>
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6">
